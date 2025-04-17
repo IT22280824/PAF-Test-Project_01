@@ -1,14 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Nav from './components/Nav.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      Hello World
+
+      <Nav/>
+
+      <main>
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content area where you can put your text, images, and other important information.</p>
+
+        <section>
+          <h2>Latest News</h2>
+          <p>Here's where you can share updates or blog posts.</p>
+        </section>
+      </main>
+
+
     </>
   )
 }
